@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+  <string-array name="tab_film">
+    <item>影视榜</item>
+    <item>短视频</item>
+    <item>排行榜</item>
+  </string-array>
+
+
+</resources>
+

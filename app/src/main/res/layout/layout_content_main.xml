@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--AppBarLayout必须作为CoordinatorLayout的直接子View，否则它的大部分功能将不会生效，如layout_scrollFlags等。-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title=" ">
+            <RadioGroup
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:id="@+id/radiogroup"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="true"
+                    android:id="@+id/rb_home"
+                    android:drawableTop="@drawable/tab_home_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawableTop="@drawable/tab_dynamic_selector"
+                    android:id="@+id/rb_dynamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:button="@null"
+                    android:id="@+id/rb_message"
+                    android:drawableTop="@drawable/tab_message_selector"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </RadioGroup>
+            </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--为了使得Toolbar有滑动效果，必须做到如下三点:-->
+    <!--1. CoordinatorLayout作为布局的父布局容器。-->
+    <!--2. 给需要滑动的组件设置 app:layout_scrollFlags=”scroll|enterAlways” 属性。-->
+    <!--3. 给滑动的组件设置app:layout_behavior属性-->
+
+    <!--从图中我们可以知道 layout_scrollFlags="scroll|enterAlways，-->
+    <!--前面已经说到layout_scrollFlags=scroll的时候，这个View会 跟着 滚动 事件响应，-->
+    <!--layout_scrollFlags=“enterAlways”的时候 这个View会响应下拉事件-->
+    <!--所以呈现出来的结果应该是我们在上拉的时候toolBar 会隐藏，下拉的时候toolBar会出来-->
+
+    <!--那如果当我们的toolBar 等于 app:layout_scrollFlags="scroll|snap"的时候 ，-->
+    <!--layout_scrollFlags=scroll的时候，这个View会 跟着 滚动 事件响应，-->
+    <!--layout_scrollFlags=“snap”的时候 在Scroll滑动事件结束以前 ，如果这个View部分可见，那么这个View会停在最接近当前View的位置。-->
+    <!--TabLayout 在我们滑动的时候最终会停靠在 最顶部，是因为我们没有设置其layout_scrollFlags，即TabLayout是静态的-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+</android.support.design.widget.CoordinatorLayout>

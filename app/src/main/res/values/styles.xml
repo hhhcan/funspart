@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+
+    <style name="AppTheme" parent="MyTheme"></style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="BlueProgressBar" parent="Base.Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progresscircle</item>
+        <item name="android:minWidth">36dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:maxWidth">76dp</item>
+        <item name="android:maxHeight">76dp</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!--选中状态icon的颜色和字体颜色-->
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/red_base</item>
+        <!--正常状态下字体颜色和icon颜色-->
+        <item name="android:textColorPrimary">@color/white</item>
+
+    </style>
+
+    <!-- expandedTitleTextAppearance Title -->
+    <style name="expandedTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="noAnimation_Theme" parent="android:Theme">
+           
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+           
+        <item name="android:windowNoTitle">true</item>
+           
+        <item name="android:windowFullscreen">true</item>
+           
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="noAnimation">
+           
+        <item name="android:activityOpenEnterAnimation">@null</item>
+           
+        <item name="android:activityOpenExitAnimation">@null</item>
+           
+        <item name="android:activityCloseEnterAnimation">@null</item>
+           
+        <item name="android:activityCloseExitAnimation">@null</item>
+           
+        <item name="android:taskOpenEnterAnimation">@null</item>
+           
+        <item name="android:taskOpenExitAnimation">@null</item>
+           
+        <item name="android:taskCloseEnterAnimation">@null</item>
+           
+        <item name="android:taskCloseExitAnimation">@null</item>
+           
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+           
+        <item name="android:taskToFrontExitAnimation">@null</item>
+           
+        <item name="android:taskToBackEnterAnimation">@null</item>
+           
+        <item name="android:taskToBackExitAnimation">@null</item>
+
+    </style>
+</resources>

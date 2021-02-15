@@ -1,0 +1,9 @@
+gradle.ext.compileSdkVersion = 24
+//gradle.ext.buildToolsVersion = "25.0.1"
+gradle.ext.minSdkVersion = 15
+gradle.ext.targetSdkVersion = 24
+
+gradle.ext.supportLibraryVersion = '24.2.1'  //以后会更新到新版
+gradle.ext.ijkPlayerVersion = '0.8.8'
+
+include ':app', ':RecyclerviewWidget', ':PtrWidget', ':HttpLibrary', ':IjkLibrary'

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">趣味</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+
+    <string name="author_desc">你好，欢迎来访首页!~\n\n
+        本人爱好徒步、听音乐、记录日常学习笔记，致力成为一名终身学习者；\n
+        善于倾听，做事喜欢规划，热爱编码，谨慎富有挑战精神；\n
+        有进取心，对工作负责，可适应高强度工作\n\n
+        两年左右java，android 开发经验\n
+        坐标: 深圳\n
+        期望和更多的技术达人交朋友\n\n
+    </string>
+
+    <string name="email">*Email:15768203391@163.com</string>
+    <string name="github">*Github:https://github.com/forezp</string>
+    <string name="blog">*Blog:https://blog.csdn.net/jb_home</string>
+    <string name="about">
+        * 接口数据都来自线上爬取可以直接访问读取的相关公共API.\n\n
+        * 首页通过ViewPager加载相关Fragment页面进行切换响应.\n\n
+        * 整体采用MVP+RxJava+Retrofit框架.\n\n
+        * UI设计风格采用materailDesign界面风格.\n\n
+        * 主要涉及播放、新闻、资讯等三大模块展示.\n\n
+        * 新增全局主题换肤切换响应
+    </string>
+</resources>

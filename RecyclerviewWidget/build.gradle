@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion gradle.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion gradle.ext.minSdkVersion
+        targetSdkVersion gradle.ext.targetSdkVersion
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':PtrWidget')
+    implementation "com.android.support:recyclerview-v7:$gradle.ext.supportLibraryVersion"
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+}
