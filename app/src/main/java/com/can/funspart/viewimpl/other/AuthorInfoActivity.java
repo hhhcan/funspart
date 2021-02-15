@@ -33,6 +33,8 @@ public class AuthorInfoActivity extends BaseActivity {
     TextView tvBlog;
     @BindString(R.string.blog)
     String blog;
+    @BindView(R.id.tv_github)
+    TextView tvGithub;
     @BindString(R.string.github)
     String github;
 
@@ -57,6 +59,7 @@ public class AuthorInfoActivity extends BaseActivity {
         collapsingToolbarLayout.setTitle("_~~欢迎来访~~_");
         collapsingToolbarLayout.setCollapsedTitleTextColor(getResources().getColor(R.color.white));
         ViewUtils.setTextViewUnderline(tvBlog,blog);
+        ViewUtils.setTextViewUnderline(tvGithub,github);
     }
 
 
@@ -67,6 +70,19 @@ public class AuthorInfoActivity extends BaseActivity {
             case R.id.tv_blog:
                 intent=new Intent(this, WebviewActivity.class);
                 intent.putExtra(WebviewActivity.EXTRA_URL,"https://blog.csdn.net/jb_home");
+                startThActivityByIntent(intent);
+                break;
+        }
+    }
+
+
+    @OnClick({R.id.tv_github})
+    public void onClickByTvGithub(View view) {
+        Intent intent;
+        switch (view.getId()) {
+            case R.id.tv_github:
+                intent=new Intent(this, WebviewActivity.class);
+                intent.putExtra(WebviewActivity.EXTRA_URL,"https://github.com/hhhcan");
                 startThActivityByIntent(intent);
                 break;
         }

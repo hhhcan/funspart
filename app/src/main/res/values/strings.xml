@@ -13,14 +13,13 @@
     </string>
 
     <string name="email">*Email:15768203391@163.com</string>
-    <string name="github">*Github:https://github.com/forezp</string>
+    <string name="github">*Github:https://github.com/hhhcan</string>
     <string name="blog">*Blog:https://blog.csdn.net/jb_home</string>
     <string name="about">
         * 接口数据都来自线上爬取可以直接访问读取的相关公共API.\n\n
-        * 首页通过ViewPager加载相关Fragment页面进行切换响应.\n\n
         * 整体采用MVP+RxJava+Retrofit框架.\n\n
-        * UI设计风格采用materailDesign界面风格.\n\n
-        * 主要涉及播放、新闻、资讯等三大模块展示.\n\n
+        * 业务方面主要涉及播放、新闻、资讯等三大模块展示.\n\n
+        * UI界面采用Material Design设计规范，tablayout和viewpager配合，viewpager切换fragment，抽屉界面的实现使用DrawerLayout和NavigationView配合.\n\n
         * 新增全局主题换肤切换响应
     </string>
 </resources>
