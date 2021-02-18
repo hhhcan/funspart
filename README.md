@@ -10,6 +10,10 @@
       
       * 新增全局主题换肤切换响应
 
+#ScreenShot
+
+     ![avatar](https://raw.githubusercontent.com/hhhcan/funspart/master/ScreenShot/1.png)
+
 #Statement
 
       该项目仅供交流学习使用，如果该项目有侵犯版权问题，或被告知需停止共享与使用，本人会及时删除此页面与整个项目。
