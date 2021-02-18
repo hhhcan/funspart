@@ -12,7 +12,7 @@
 
 #ScreenShot
 
-     ![avatar](https://raw.githubusercontent.com/hhhcan/funspart/master/ScreenShot/1.png)
+     ![avatar](/ScreenShot/1.png)
 
 #Statement
 
